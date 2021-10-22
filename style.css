@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box; 
+    color: gainsboro
+}
+
+body {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+#main {
+    min-height: 80vh;
+}
+
+#content {
+    background-color: rgb(40,40,40);
+    color:gainsboro;
+    flex: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#chat {
+    flex: 0 0 20vw;
+    background: rgb(10,10,10);
+    color: white;
+
+    border-left: 5px solid rgb(40,0,40);
+}
+
+header, footer, article, nav, aside {
+    padding: 1em;
+}
+
+header, footer {
+    background: rgb(40,0,40);
+    height: 10vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#viewers {
+    font-size: 30px;
+}
+
+#cam {
+    width: 50vh;
+    height: 30vh;
+    float: right;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#cam > img {
+    border: rgb(10,10,10);
+    border-style: solid;
+    border-width: 5px;
+    min-width: 100%;
+    min-height: 100%;
+}
